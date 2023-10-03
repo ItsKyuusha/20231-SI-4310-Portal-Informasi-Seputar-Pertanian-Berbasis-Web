@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website Ide Bisnis ">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Sugiarto, Muhammad Arief Hidayatullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="desain/GREENEWS@2x.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <title>GreeNews - Portal Informasi Seputar Pertanian</title>
+    </head>
+<body>
+        <nav>
+            <div class="logo-container">
+                <img src="desain/GREENEWS@2x.png" alt="Logo Gree_News" class="logo-image">
+                <h1>GreeNews</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="kontak.html">Contact Us</a></li>
+                <li><a href="tentang.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="slide-opening">
+            <div class="mySlides fade">
+                <img src="desain/p1.jpg" width="950" height="500">
+            </div>
+            <div class="mySlides fade">
+                <img src="desain/p2.jpg" width="950" height="500">
+            </div>
+            <div class="mySlides fade">
+                <img src="desain/p3.jpg" width="950" height="500">
+            </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+    <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+          
+            // Tambahkan variabel intervalSlide untuk mengatur interval penggantian slide (misalnya setiap 5 detik).
+            let intervalSlide = setInterval(() => {
+              plusSlides(1);
+            }, 5000); // 5000 milidetik = 5 detik
+          
+            // Fungsi untuk menggeser slide ke slide berikutnya.
+            function plusSlides(n) {
+              clearInterval(intervalSlide); // Hentikan interval sebelumnya
+              showSlides((slideIndex += n));
+              intervalSlide = setInterval(() => {
+                plusSlides(1);
+              }, 5000); // Mulai interval baru setelah menggeser slide
+            }
+          
+            function currentSlide(n) {
+              clearInterval(intervalSlide); // Hentikan interval sebelumnya
+              showSlides((slideIndex = n));
+              intervalSlide = setInterval(() => {
+                plusSlides(1);
+              }, 5000); // Mulai interval baru setelah menggeser slide
+            }
+          
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
+          
+
+    <section id="hero">
+        <h1>Selamat Datang di GreeNews, Portal Informasi Seputar Pertanian</h1>
+        <p>Temukan berita terkini, panduan pertanian, dan komunitas petani terbesar di sini.</p>
+        <a href="tentang.html" class="cta-button">Tentang Kami</a>
+    </section>
+    <div class="list">
+        <div class="list_menu">
+            <img class="gambarmenu" src="desain/OIP.jpg">
+            <a href="berita.html">Berita</a>
+            <p class="subtitle">Selengkapnya</p>
+        </div>
+        <div class="list_menu">
+            <img class="gambarmenu" src="desain/OIP.jpg">
+            <a href="tanaman.html">Tanaman</a>
+            <p class="subtitle">Selengkapnya</p>
+        </div>
+        <div class="list_menu">
+            <img class="gambarmenu" src="desain/OIP.jpg">
+            <a href="forum.html">Forum</a>
+            <p class="subtitle">Selengkapnya</p>
+        </div>
+        <div class="list_menu">
+            <img class="gambarmenu" src="desain/OIP.jpg">
+            <a href="kalkulator.html">Kalkulator Pertanian</a>
+            <p class="subtitle">Selengkapnya</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="tentang.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>List Menu</h4>
+                    <ul>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="tanaman.html">Tanaman</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://ne-np.facebook.com/david.sugiarto.564/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/_da049/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_da049/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://daaddimaki04.000webhostapp.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bwh">
+        <p style="text-align: center">Copyright &copy; 2023 GreeNews</p>
+    </div>   
+    
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: khaki;
+    color: dimgray;
+    display: flex;
+    justify-content: space-between; /* Membuat logo dan menu berada di dua sisi berbeda */
+    align-items: center;    gap: 100px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 150px; /* Ukuran gambar logo */
+    margin-right: 10px; /* Jarak antara logo gambar dan teks */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+    /* slide opening */
+    .slide-opening {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 7px;
+    background-color: #fff;
+      box-shadow: 0 4px 15px rgba(0, -1, 0, 0.25);
+    }
+    
+    /* Next & prev buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 100%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #4CAF50;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Posisi "next button" sebelah kanan */
+    .next {
+      right: 20;
+      border-radius: 3px 0 0 3px;
+    }
+    /* Posisi "prev button" sebelah kiri */
+    .prev {
+      left: 20;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* untuk hover header list */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* indikator */
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+
+.menu {
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #4CAF50;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.list_menu{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 10px;
+    background-color: #fff;
+    font-family: sans-serif;
+    color:#e6e7e7;
+    padding-left: 50px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    box-shadow: 0 5px 15px rgba(0, -1, 0, 0.25);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.list_menu a{
+    color: dimgray;;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: khaki;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, -1, 0, 0.25);
+}
+
+.list_menu a:hover{
+    background-color: gainsboro;
+    color: #212529;
+    box-shadow: 0 2px 5px rgb(207, 207, 207);
+}
+
+.gambarmenu{
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, -1, 0, 0.25);
+}
+
+.subtitle{
+    color: dimgray;
+    text-decoration: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+
+/* CSS Footer */
+.footer {
+    background-color: khaki;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: flex-end; /* Menggeser menu-footer ke kanan */
+}
+
+.footer-col {
+    text-align: left;
+    margin-left: 20px; /* Memberi jarak antara kolom menu-footer */
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #24262b;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: dimgray;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*---*/
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #4CAF50;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #4CAF50;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: dimgray;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: #4CAF50;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #ffffff;
+        background-color: dimgray;
+    }
+
+    .footer-bwh{
+        background-color: khaki;
+    }
+
+/* media queries untuk tata letak responsif */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu li {
+        margin-right: 0;
+    }
+
+    .slide-opening {
+        max-width: 100%;
+    }
+
+    .prev, .next {
+        top: 50%;
+        margin-top: -22px;
+        font-size: 24px;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_menu {
+        margin: 20px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .gambarmenu {
+        width: 100%;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+</style>
