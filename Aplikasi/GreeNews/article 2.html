@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website Ide Bisnis ">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Sugiarto, Muhammad Arief Hidayatullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="desain/GREENEWS@2x.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <title>GreeNews - Portal Informasi Seputar Pertanian</title>
+    </head>
+<body>
+        <nav>
+            <div class="logo-container">
+                <img src="desain/GREENEWS@2x.png" alt="Logo Gree_News" class="logo-image">
+            <ul class="menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="kontak.html">Contact Us</a></li>
+                <li><a href="tentang.html">About Us</a></li>
+            </ul>
+        </div>
+     
+        <!-- Navbar Searching -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="searchContent()"><i class="fa fa-search"></i></button>
+            </div>
+    </nav> 
+        
+
+        <div id="searchResults">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </div>
+    
+        <script>
+            function searchContent() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('searchInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById('searchResults');
+                li = ul.getElementsByTagName('li');
+                
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName('a')[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = '';
+                    } else {
+                        li[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    <section id="content">
+        <article class="article">
+            <img src="desain/article 2.jpeg" alt="Artikel 2" class="article-image" style="width: 800px; height: 500px;"   >
+            <h1>Meriahkan Hari Tani, Tokopedia Beri 'Panggung' Penjual Buah-Tanaman</h1>
+            <p class="article-info">Diposting oleh <span class="author">Kyuusha</span> pada <span class="date">26 September 2023</span></p>
+            <p>
+                Jakarta - Dalam rangka menyambut Hari Tani Nasional 2023, Tokopedia memberikan panggung bagi pelaku UMKM lokal yang telah berperan dalam memberdayakan petani lokal. Hal itu dilakukan Tokopedia dengan menggencarkan inisiatif Hyperlocal seperti layanan pemenuhan pesanan 'Dilayani Tokopedia' dan kampanye 'Tokopedia NYAM!'
+                "Menyambut Hari Tani Nasional 24 September 2023 mendatang, Tokopedia terus menggencarkan inisiatif Hyperlocal untuk memberikan panggung bagi lebih dari 14 juta penjual, di mana hampir 100 persennya pelaku UMKM. Termasuk yang menjual produk pertanian untuk mengembangkan usaha sekaligus membantu meningkatkan kesejahteraan para petani," ujar Category Development Senior Lead Tokopedia Revie Jefta Akhwilla dalam keterangan tertulis, Senin (25/9/2023).
+            </p>
+            <br/>
+
+            <p>
+                Sektor pertanian memiliki peran krusial dalam ketahanan pangan, penyerapan tenaga kerja, hingga perekonomian Indonesia. Mengutip dari Kementerian Pertanian Republik Indonesia, sektor pertanian tahun 2020 dalam kondisi pandemi Covid-19 masih mampu mempertahankan pertumbuhan yang positif. Laju pertumbuhan PDB sektor pertanian secara luas meningkat sebesar 1,77 persen dan tahun 2021 sebesar 1,84 persen.
+                "Sektor pertanian menjadi tumpuan signifikan dalam pemulihan ekonomi nasional pasca pandemi. Kolaborasi seluruh pihak sangat dibutuhkan untuk makin mengoptimalkan peran petani dan mendorong kemajuan industri pertanian dalam negeri," ucap Revie.
+            </p>
+            <br/>
+
+            <p>
+                Ia menjelaskan Hyperlocal bertujuan mendekatkan penjual dengan pembeli melalui teknologi geo-tagging. Ia juga menuturkan berbagai manifestasi Hyperlocal yang digagas Tokopedia, salah satunya adalah layanan pemenuhan pesanan atau fulfillment service 'Dilayani Tokopedia'.
+                "Hyperlocal bertujuan mendekatkan penjual dengan pembeli di mana pun mereka berada dengan teknologi geo-tagging. Salah satu manifestasi Hyperlocal adalah layanan pemenuhan pesanan (fulfillment service) 'Dilayani Tokopedia'. Penjual di seluruh wilayah di Indonesia, termasuk yang bergerak di sektor pertanian, bisa menitipkan produk di gudang-gudang pintar Tokopedia di wilayah dengan permintaan tinggi supaya tidak perlu pindah ke kota besar. Di sisi lain, masyarakat di seluruh wilayah di Indonesia bisa mengakses lebih banyak pilihan produk kebutuhan secara lebih cepat dan efisien dengan bebas ongkir," ujar Revie.
+            </p>
+            <br/>
+
+            <p>
+                Revie melanjutkan contoh lain manifestasi Hyperlocal yaitu Tokopedia NYAM!. Kampanye tersebut merupakan gagasan Tokopedia yang diisi makanan dan minuman dari pelaku usaha khususnya UMKM lokal.
+                "Contoh lain manifestasi Hyperlocal adalah Tokopedia NYAM!, kampanye yang berisi produk makanan dan minuman dari para pelaku usaha di Indonesia, khususnya UMKM. Menyambut Hari Tani Nasional, Tokopedia NYAM! mengadakan Tokopedia Coffee Week untuk memberikan panggung lebih bagi pelaku usaha kopi yang juga memberdayakan petani lokal," ujar Revie.
+            </p>
+            <br/>
+
+            <p>
+                Lebih lanjut, ia mengungkapkan dampak yang dihasilkan Hyperlocal Tokopedia, yakni meningkatnya tren belanja online produk yang dihasilkan petani lokal.
+                "Di Tokopedia, sepanjang kuartal III 2023, penjualan produk tanaman, termasuk tanaman hias, bibit tanaman dan sejenisnya, naik lebih dari 1,5 kali lipat jika dibandingkan dengan kuartal III 2022," ungkapnya.
+            </p>
+            <br/>
+
+            <p>
+                Revie pun mengungkapkan larisnya berbagai jenis buah yang dihasilkan petani di Tokopedia, salah satunya buah mangga harum manis. Penjualan buah mangga yang populer berasal dari Probolinggo, Jawa Timur, tersebut meningkat hampir 3,5 kali lipat selama kuartal III 2023 dibanding kuartal III tahun 2022.
+                "Sedangkan jumlah transaksi buah salak pondoh, yang kaya serat, karbohidrat, zat besi, vitamin A dan C, melonjak hampir 4 kali lipat. Di sisi lain, pisang cavendish atau pisang ambon putih mengalami kenaikan transaksi lebih dari 13 kali lipat," tutur Revie.
+            </p>
+            <br/>
+            
+            <p>
+                Tak hanya buah, Revie meneruskan beberapa jenis sayur pun mengalami kenaikan transaksi yang signifikan. Penjualan pare misalnya, selama kuartal III 2023 meningkat hampir empat kali lipat dibanding kuartal III 2022.
+                "Transaksi ubi ungu manis naik hampir 7 kali lipat. Sedangkan penjualan sayur selada iceberg, yang kaya akan kandungan vitamin A dan C, melonjak hampir 7,5 kali lipat," ungkap Revie.
+                "Berbagai komoditas yang dihasilkan petani lokal, seperti biji kopi dan madu, pun sangat diburu masyarakat lewat Tokopedia. Hal ini tampak pada penjualan biji kopi Indonesia yang mengalami kenaikan lebih dari 2 kali lipat selama kuartal III 2023 dibanding kuartal III 2022. Sedangkan jumlah transaksi madu asal Kalimantan naik lebih 4,5 kali lipat," tambah Revie.
+                Selain itu, Revie menjelaskan Tokopedia juga membagikan kisah inspiratif pelaku usaha Pupuk Dinosaurus dan Sakha Coffee Roastery yang memperjuangkan kesejahteraan petani lokal lewat berjualan online di Tokopedia.
+            </p>
+            <br/>
+
+            <p>
+                Pendiri Pupuk Dinosaurus Freddy Wijaya mengungkapkan dirinya mendirikan usaha Pupuk Dinosaurus pada tahun 2017, berangkat dari kepeduliannya terhadap petani di Nusa Tenggara Timur (NTT).
+                Freddy menyadari sektor pertanian di Indonesia menghadapi banyak tantangan. Maka dari itu, Pupuk Dinosaurus memproduksi pupuk organik untuk meningkatkan produktivitas lahan sehingga pendapatan petani ikut melonjak.
+                "Salah satunya, mengubah mindset dan budaya petani Indonesia untuk kembali ke pertanian yang lebih sehat atau memakai bahan alami yang ramah lingkungan. Pertanian sehat bisa membuat lahan makin subur. Hasil panen dan pendapatan petani pun bisa meningkat," ujar Freddy.
+            </p>
+            <br/>
+
+            <p>
+                Freddy mengungkapkan Pupuk Dinosaurus terus berupaya memberdayakan petani melalui pelatihan dan pendampingan. Mereka juga mengadakan demonstrasi agar petani bisa melihat dan mempraktekkan cara menggunakan teknologi budidaya hingga pemupukan agar produktivitas lahan naik.
+                Lewat bisnis tersebut, Freddy berhasil memberdayakan ratusan petani dari berbagai wilayah di Indonesia. Pupuk Dinosaurus pun memanfaatkan Dilayani Tokopedia agar produknya dapat diakses petani di seluruh wilayah di Indonesia dengan mudah.
+                "Penjualan Pupuk Dinosaurus di Tokopedia terus melesat. Bahkan berkat Dilayani Tokopedia, produk Pupuk Dinosaurus bisa dijangkau para masyarakat, termasuk petani, dari Aceh hingga Kupang," ujar Freddy.
+            </p>
+            <br/>
+
+            <p>
+                Di lain sisi, Pendiri Sakha Coffee Roastery Teuku Andi membangun usahanya pada tahun 2017. Dalam membangung usaha tersebut, ia mengungkapkan keinginannya mendirikan roastery sendiri sekaligus memberdayakan sejumlah petani kopi di Indonesia, mulai dari Aceh, Jambi, Palembang, Bandung, Temanggung, Bali, hingga Flores.
+                Selanjutnya, Teuku menyebutkan saat pandemi melanda di awal tahun 2020, Sakha Coffee Roastery memutuskan untuk berjualan produk biji kopi secara online di Tokopedia agar bisa tetap membantu petani kopi Indonesia mempertahankan pekerjaan. Sakha Coffee Roastery juga mengikuti berbagai kampanye di Tokopedia, termasuk Tokopedia NYAM!, agar kopi Indonesia bisa terus dijangkau masyarakat.
+                "Saat ini, mayoritas penjualan Sakha Coffee Roastery berasal dari Tokopedia. Transaksi toko Sakha Coffee di Tokopedia naik lebih dari 1,5 kali lipat selama kuartal I 2023 dibandingkan kuartal I 2022 dan omzet kami bisa mencapai ratusan juta setiap bulan lewat Tokopedia. Bahkan Sakha Coffee Roastery memenangkan nominasi 'Kopi Bubuk Terbaik' di ajang Terbukti NYAM! 2023," kata Teuku.
+                Lebih lanjut, Sakha Coffee Roastery juga mengikuti kampanye Tokopedia Coffee Week. Ada berbagai promo menarik yang bisa membuat belanja kopi makin hemat, salah satunya flash sale mulai dari Rp 10 ribu hingga diskon sampai 50 persen.
+            </p>
+            <br/>
+
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="tentang.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="kontak.html">Contact Us</a></li>
+                        <li><a href="tentang.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>List Menu</h4>
+                    <ul>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="tanaman.html">Tanaman</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://ne-np.facebook.com/david.sugiarto.564/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/_da049/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_da049/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://daaddimaki04.000webhostapp.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bwh">
+        <p style="text-align: center">Copyright &copy; 2023 Gree_News</p>
+    </div>   
+    
+</body>
+</html>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    nav {
+        background-color: khaki;
+        color: dimgray;
+        display: flex;
+        justify-content: space-between; /* Membuat logo dan menu berada di dua sisi berbeda */
+        align-items: center;    gap: 100px;
+    }
+    
+    /* Navbar Searching */
+    .search-container {
+                float: right;
+                margin-top: 10px;
+                align-items: center;
+            }
+    
+            .search-container input[type="text"] {
+                padding: 5px;
+                margin-top: 4px;
+                margin-right: 16px;
+                border: none;
+                font-size: 17px;
+            }
+    
+            .search-container button {
+                padding: 5px 10px;
+                background: #4CAF50;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .search-container button:hover {
+                background: dimgray;
+            }
+    
+            #searchResults {
+                list-style: none;
+            }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-image {
+        max-width: 150px; /* Ukuran gambar logo */
+        margin-right: 10px; /* Jarak antara logo gambar dan teks */
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article-info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CSS Footer */
+.footer {
+    background-color: khaki;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: flex-end; /* Menggeser menu-footer ke kanan */
+}
+
+.footer-col {
+    text-align: left;
+    margin-left: 20px; /* Memberi jarak antara kolom menu-footer */
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #24262b;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: dimgray;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*---*/
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #4CAF50;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #4CAF50;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: dimgray;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: #4CAF50;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #ffffff;
+        background-color: dimgray;
+    }
+
+    .footer-bwh{
+        background-color: khaki;
+    }
+
+/* Style tambahan sesuai kebutuhan Anda */
+/*sc : https://finance.detik.com/berita-ekonomi-bisnis/d-6949936/meriahkan-hari-tani-tokopedia-beri-panggung-penjual-buah-tanaman/2*/
+</style>

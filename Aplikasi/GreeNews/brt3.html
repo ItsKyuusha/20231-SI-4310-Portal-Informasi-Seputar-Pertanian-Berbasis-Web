@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website Ide Bisnis ">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Sugiarto, Muhammad Arief Hidayatullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="desain/GREENEWS@2x.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <title>GreeNews - Portal Informasi Seputar Pertanian</title>
+    </head>
+<body>
+        <nav>
+            <div class="logo-container">
+                <img src="desain/GREENEWS@2x.png" alt="Logo Gree_News" class="logo-image">
+            <ul class="menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="kontak.html">Contact Us</a></li>
+                <li><a href="tentang.html">About Us</a></li>
+            </ul>
+        </div>
+     
+        <!-- Navbar Searching -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="searchContent()"><i class="fa fa-search"></i></button>
+            </div>
+    </nav> 
+        
+
+        <div id="searchResults">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </div>
+    
+        <script>
+            function searchContent() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('searchInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById('searchResults');
+                li = ul.getElementsByTagName('li');
+                
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName('a')[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = '';
+                    } else {
+                        li[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    <section id="content">
+        <article class="article">
+            <img src="desain/brt3.jpg" alt="Artikel 2" class="article-image" style="width: 800px; height: 500px;">
+            <h1>Gerakan Penciptaan 10 Juta Petani Digital Dideklarasikan</h1>
+            <p class="article-info">Diposting oleh <span class="author">Kyuusha</span> pada <span class="date">26 September 2023</span></p>
+            <p>
+                JAKARTA - Gerakan Maju Tani mendeklarasikan manifesto perjuangan pada Senin (11/9/2023) di depan Kepala Staf Kepresidenan yang juga Ketua Umum Himpunan Kerukunan Tani Indonesia (HKTI) Moeldoko . Deklarasi dilakukan di Kantor Staf Kepresidenan, Jakarta.
+            </p>
+            <br/>
+
+            <p>
+                Gerakan Maju Tani bertekad memajukan sektor pertanian dengan teknologi dan inovasi, memberdayakan generasi muda di dunia pertanian, melestarikan pertanian yang berkelanjutan, mengatasi krisis pangan dunia dan keamanan pangan dalam negeri serta mencanangkan Hari Maju Tani pada 8 Oktober 2023 sebagai Hari Kebangkitan dan Transformasi Petani Muda Indonesia.
+            </p>
+            <br/>
+
+            <p>
+                Salah satu inisiator Gerakan Maju Tani Indonesia, Erwin Gunawan mengungkapkan, tujuan utama dari Gerakan ini adalah mencetak 10 juta petani digital sebelum akhir 2024. Menurut Erwin, gerakan ini berawal dari kekhawatiran pihaknya terkait krisis pangan yang terjadi di banyak negara termasuk Indonesia.
+            </p>
+            <br/>
+
+            <p>
+                "Saat ini, Indonesia sudah menjadi negara importir bahan pangan. Belum lagi jumlah petani yang semakin berkurang. Karena itu, kami ingin berupaya agar anak muda tertarik untuk menjadi petani. Masalah krisis pangan dan terus menurunnya jumlah petani bukan hanya menjadi tanggung jawab pemerintah, tapi juga menjadi tanggung jawab kita bersama,” kata Erwin dalam acara konferensi pers Gerakan Maju Tani di kantor staf kepresidenan, dikutip Senin (11/9/2023).
+            </p>
+            <br/>
+
+            <p>
+                Erwin menambahkan, Gerakan Maju Tani mengusung konsep metafarming yang memungkinkan anak muda untuk bisa menjadi petani secara digital. Meta Farming adalah platform online tempat semua orang bisa terlibat dalam pertanian. Melalui aplikasi ini, mereka yang tertarik untuk bertani bisa bercocok tanam di lahan yang sudah disiapkan oleh Meta Farming.
+            </p>
+            <br/>
+
+            <p>
+                “Kami meminta dukungan dari Bapak Moeldoko untuk menjalankan konsep ini secara massal, tidak hanya di kota-kota besar tetapi juga di seluruh wilayah di Indonesia. Kami juga akan meminta bantuan dari Kementerian Pertanian agar target 10 juta petani digital bisa tercapai pada akhir 2024," lanjut Erwin.
+            </p>
+            <br/>
+
+            <p>
+                Moeldoko menyambut baik Gerakan Maju Tani yang diusung oleh sekelompok anak muda. Dia menyebut gerakan ini sebagai Neo Marhaen.
+            </p>
+            <br/>
+
+            <p>
+                “Dulu Bung Karno bertemu dengan seorang petani bernama Marhaen yang tekun menjalankan pekerjaannya sebagai petani namun jauh dari sejahtera. Karena itu, Bung Karno mengenalkan gerakan Marhaen yang bertujuan untuk meningkatkan kesejahteraan petani. Kini, dengan lahan subur yang semakin berkurang, sejumlah anak muda menawarkan konsep metafarming untuk membuat petani lebih sejahtera. Gerakan ini saya sebut sebagai neomarhaein,” kata Moeldoko.
+            </p>
+            <br/>
+
+            <p>
+                Moeldoko menambahkan, metafarming merupakan bentuk transformasi di sektor pertanian. Konsep ini memanfaatkan teknologi yang bisa digunakan untuk menginspirasi anak muda untuk mau menjadi petani.
+            </p>
+            <br/>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="tentang.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="kontak.html">Contact Us</a></li>
+                        <li><a href="tentang.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>List Menu</h4>
+                    <ul>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="tanaman.html">Tanaman</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://ne-np.facebook.com/david.sugiarto.564/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/_da049/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_da049/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://daaddimaki04.000webhostapp.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bwh">
+        <p style="text-align: center">Copyright &copy; 2023 Gree_News</p>
+    </div>   
+    
+</body>
+</html>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    nav {
+        background-color: khaki;
+        color: dimgray;
+        display: flex;
+        justify-content: space-between; /* Membuat logo dan menu berada di dua sisi berbeda */
+        align-items: center;    gap: 100px;
+    }
+    
+    /* Navbar Searching */
+    .search-container {
+                float: right;
+                margin-top: 10px;
+                align-items: center;
+            }
+    
+            .search-container input[type="text"] {
+                padding: 5px;
+                margin-top: 4px;
+                margin-right: 16px;
+                border: none;
+                font-size: 17px;
+            }
+    
+            .search-container button {
+                padding: 5px 10px;
+                background: #4CAF50;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .search-container button:hover {
+                background: dimgray;
+            }
+    
+            #searchResults {
+                list-style: none;
+            }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-image {
+        max-width: 150px; /* Ukuran gambar logo */
+        margin-right: 10px; /* Jarak antara logo gambar dan teks */
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article-info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CSS Footer */
+.footer {
+    background-color: khaki;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: flex-end; /* Menggeser menu-footer ke kanan */
+}
+
+.footer-col {
+    text-align: left;
+    margin-left: 20px; /* Memberi jarak antara kolom menu-footer */
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #24262b;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: dimgray;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*---*/
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #4CAF50;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #4CAF50;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: dimgray;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: #4CAF50;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #ffffff;
+        background-color: dimgray;
+    }
+
+    .footer-bwh{
+        background-color: khaki;
+    }
+
+
+/* Style tambahan sesuai kebutuhan Anda */
+/*sc : https://finance.detik.com/berita-ekonomi-bisnis/d-6949936/meriahkan-hari-tani-tokopedia-beri-panggung-penjual-buah-tanaman/2*/
+</style>

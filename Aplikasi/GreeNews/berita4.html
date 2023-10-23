@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website Ide Bisnis ">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Sugiarto, Muhammad Arief Hidayatullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="desain/GREENEWS@2x.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <title>GreeNews - Portal Informasi Seputar Pertanian</title>
+    </head>
+<body>
+        <nav>
+            <div class="logo-container">
+                <img src="desain/GREENEWS@2x.png" alt="Logo Gree_News" class="logo-image">
+            <ul class="menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="kontak.html">Contact Us</a></li>
+                <li><a href="tentang.html">About Us</a></li>
+            </ul>
+        </div>
+     
+        <!-- Navbar Searching -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="searchContent()"><i class="fa fa-search"></i></button>
+            </div>
+    </nav> 
+        
+
+        <div id="searchResults">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </div>
+    
+        <script>
+            function searchContent() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('searchInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById('searchResults');
+                li = ul.getElementsByTagName('li');
+                
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName('a')[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = '';
+                    } else {
+                        li[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    <section id="content">
+        <article class="article">
+            <img src="desain/berita4.jpg" alt="Artikel 2" class="article-image" style="width: 800px; height: 500px;"   >
+            <h1>Digitalisasi Sektor Pertanian Perlu Terus Digencarkan</h1>
+            <p class="article-info">Diposting oleh <span class="author">Kyuusha</span> pada <span class="date">26 September 2023</span></p>
+            <p>
+                JAKARTA - PT Pupuk Indonesia (Persero) mendukung upaya perbaikan data dan tata kelola sektor pertanian dengan digitalisasi. Salah satu yang dilakukan perusahaan adalah melalui aplikasi REKAN yang dapat digunakan oleh distributor dan kios untuk memproses penjualan pupuk retail, komersil, ataupun pupuk bersubsidi.
+            </p>
+            <br/>
+
+            <p>
+                SVP Sekretaris Perusahaan Pupuk Indonesia Wijaya Laksana menyebutkan, pihaknya telah menjalin kerja sama dengan Dinas Pertanian dan Ketahanan Pangan Provinsi Bali dalam menerapkan aplikasi REKAN. Selain itu, Pupuk Indonesia juga bekerja sama dengan Bank Syariah indonesia (BSI) mengujicobakan kartuntani digital di Kabupaten Aceh Besar, Provinsi Aceh sejak bulan Januari 2023.
+            </p>
+            <br/>
+
+            <p>
+                “Kegiatan uji coba aplikasi REKAN ini dalam rangka transformasi bisnis yang dilakukan Pupuk Indonesia pada proses penyaluran pupuk kepada petani terdaftar agar lebih tertata dan terarah sehingga kami mendukung pengembangan sistem digital sektor pertanian,” demikian ungkap Wijaya, dalam keterangannya, Rabu (17/5/2023).
+            </p>
+            <br/>
+
+            <p>
+                Transformasi digitalisasi melalui REKAN ini dapat diadopsi oleh para mitra Kios Pupuk Lengkap (KPL) guna mempermudah proses penebusan pupuk bersubsidi dari yang sebelumnya dilakukan secara manual. Dengan begitu, REKAN menjadi bagian dalam merapikan manajemen distribusi, sekaligus meningkatkan fungsi pengawasan.
+            </p>
+            <br/>
+
+            <p>
+                Aplikasi REKAN ini juga dapat meningkatkan kecepatan proses verifikasi dan validasi laporan penyaluran pupuk subsidi yang diberikan oleh Pupuk Indonesia sehingga dapat dilakukan secara realtime dan mudah.
+            </p>
+            <br/>
+
+            <p>
+                “Aplikasi REKAN memiliki manfaat seperti memantau jumlah stok pada kios secara real time, mampu beroperasi offline pada wilayah terpencil, dan memudahkan petani dalam menebus pupuk bersubsidi di kios. Maka dari itu, Pupuk Indonesia mendukung digitalisasi sektor pertanian,” tambahnya.
+            </p>
+            <br/>
+
+            <p>
+                Hingga Maret 2023, sebanyak 26.254 Kios Pupuk Lengkap telah mengimplementasikan aplikasi REKAN. Dari jumlah tersebut, baru sekitar 3.035 mitra kios yang memanfaatkan aplikasi REKAN dalam setiap transaksi pembelian atau penebusan pupuk khususnya pupuk non-subsidi.
+            </p>
+            <br/>
+
+            <p>
+                Seperti yang disampaikan Presiden Jokowi pada pembukaan Sensus Pertanian Tahun 2023. Orang nomor satu di Indonesia ini berharap pemerintah dapat memiliki data akurat dan berkualitas di sektor pertanian.
+            </p>
+            <br/>
+
+            <p>
+                Perbaikan data sektor pertanian, dikatakan Jokowi sangat penting mengingat sektor tersebut berkontribusi besar terhadap perekonomian Indonesia. Berdasarkan data Badan Pusat Statistik (BPS), sebesar 11,8% kontribusi sektor pertanian terhadap Produk Domestik Bruto (PDB).
+            </p>
+            <br/>
+
+            <p>
+                “Saya mendukung pelaksanaan sensus pertanian tahun 2023, dan saya minta seluruh pemangku kepentingan di sektor pertanian menyukseskan sensus ini nanti dimulai dari 1 Juni sampai 30 Juli. 2 bulan selesai setelah itu kita mendapatkan data yang akurat dan berkualitas,” demikian kata Jokowi saat Pencanangan Pelaksanaan Sensus Pertanian Tahun 2023 di Istana Presiden, Jakarta, Senin (15/5/2023).
+            </p>
+            <br/>
+
+            <p>
+                Selain berkontribusi besar terhadap PDB, sektor pertanian juga menjadi penyedia lapangan kerja besar. Tercatat sekitar 40 juta orang atau sekitar 29% dari total angkatan kerja berada di sektor pertanian nasional. Oleh karena itu dirinya meminta seluruh pemangku kepentingan di sektor pertanian dapat mensukseskan pelaksanaan Sensus Pertanian Tahun 2023.
+            </p>
+            <br/>
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="tentang.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="kontak.html">Contact Us</a></li>
+                        <li><a href="tentang.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>List Menu</h4>
+                    <ul>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="tanaman.html">Tanaman</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://ne-np.facebook.com/david.sugiarto.564/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/_da049/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_da049/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://daaddimaki04.000webhostapp.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bwh">
+        <p style="text-align: center">Copyright &copy; 2023 Gree_News</p>
+    </div>   
+    
+</body>
+</html>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    nav {
+        background-color: khaki;
+        color: dimgray;
+        display: flex;
+        justify-content: space-between; /* Membuat logo dan menu berada di dua sisi berbeda */
+        align-items: center;    gap: 100px;
+    }
+    
+    /* Navbar Searching */
+    .search-container {
+                float: right;
+                margin-top: 10px;
+                align-items: center;
+            }
+    
+            .search-container input[type="text"] {
+                padding: 5px;
+                margin-top: 4px;
+                margin-right: 16px;
+                border: none;
+                font-size: 17px;
+            }
+    
+            .search-container button {
+                padding: 5px 10px;
+                background: #4CAF50;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .search-container button:hover {
+                background: dimgray;
+            }
+    
+            #searchResults {
+                list-style: none;
+            }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-image {
+        max-width: 150px; /* Ukuran gambar logo */
+        margin-right: 10px; /* Jarak antara logo gambar dan teks */
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article-info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CSS Footer */
+.footer {
+    background-color: khaki;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: flex-end; /* Menggeser menu-footer ke kanan */
+}
+
+.footer-col {
+    text-align: left;
+    margin-left: 20px; /* Memberi jarak antara kolom menu-footer */
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #24262b;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: dimgray;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*---*/
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #4CAF50;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #4CAF50;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: dimgray;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: #4CAF50;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #ffffff;
+        background-color: dimgray;
+    }
+
+    .footer-bwh{
+        background-color: khaki;
+    }
+
+/* Style tambahan sesuai kebutuhan Anda */
+/*sc : https://finance.detik.com/berita-ekonomi-bisnis/d-6949936/meriahkan-hari-tani-tokopedia-beri-panggung-penjual-buah-tanaman/2*/
+</style>

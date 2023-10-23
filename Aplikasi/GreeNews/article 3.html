@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website Ide Bisnis ">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="David Sugiarto, Muhammad Arief Hidayatullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="desain/GREENEWS@2x.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <title>GreeNews - Portal Informasi Seputar Pertanian</title>
+    </head>
+<body>
+        <nav>
+            <div class="logo-container">
+                <img src="desain/GREENEWS@2x.png" alt="Logo Gree_News" class="logo-image">
+            <ul class="menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="kontak.html">Contact Us</a></li>
+                <li><a href="tentang.html">About Us</a></li>
+            </ul>
+        </div>
+     
+        <!-- Navbar Searching -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="button" onclick="searchContent()"><i class="fa fa-search"></i></button>
+            </div>
+    </nav> 
+        
+
+        <div id="searchResults">
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </div>
+    
+        <script>
+            function searchContent() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('searchInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById('searchResults');
+                li = ul.getElementsByTagName('li');
+                
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName('a')[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = '';
+                    } else {
+                        li[i].style.display = 'none';
+                    }
+                }
+            }
+        </script>
+    <section id="content">
+        <article class="article">
+            <img src="desain/artic3.jpg" alt="Artikel 2" class="article-image" style="width: 800px; height: 500px;"   >
+            <h1>Bantuan Mesin Bisa Bantu Sektor Pertanian Warga Hadapi Dampak El Nino</h1>
+            <p class="article-info">Diposting oleh <span class="author">Kyuusha</span> pada <span class="date">26 September 2023</span></p>
+            <p>
+                JAKARTA - Dampak berlarutnya fenomena El Nino telah memberikan tantangan signifikan pada sektor pertanian Indonesia, khususnya pada produksi komoditas pangan. Meskipun ada beberapa sentra produksi yang masih mampu berproduksi di tengah kondisi kemarau, namun secara keseluruhan, produksi nasional telah menunjukkan tren penurunan.
+            </p>
+            <br/>
+
+            <p>
+                Menghadapi situasi seperti ini, penerapan teknologi pertanian menjadi langkah strategis untuk memitigasi dampak tersebut. PT RMK Energy Tbk melihat pentingnya peran teknologi dalam menghadapi tantangan ini dan berharap dengan bantuan traktor dan alat-alat pertanian lainnya, petani dapat mengoptimalkan produksi pertanian meski di tengah kondisi iklim yang kurang mendukung.
+            </p>
+            <br/>
+
+            <p>
+                Makanya, PT RMK Energy Tbk mendukung dan menggerakkan ekonomi masyarakat di sekitar wilayah operasional melalui kegiatan pengembangan budi daya pertanian padi sawah. Program pemberdayaan dimulai dengan penyerahan 2 unit mesin traktor serta peralatan lainnya guna mendukung pengembangan pertanian warga RT 025 dan RT 026 Selat Punai Kel. Pulokerto, Kec. Gandus, Kota Palembang, Sumatra Selatan.
+            </p>
+            <br/>
+
+            <p>
+                Mesin merupakan salah satu modal utama untuk kegiatan pertanian yang berguna untuk mempermudah dan mempercepat proses pengolahan lahan, mengingat sebagian besar lahan sawah merupakan lahan tadah hujan sehingga para petani terpacu masa waktu tanam.
+            </p>
+            <br/>
+
+            <p>
+                Direktur Operasional RMKE, William Saputra, mengatakan bahwa bantuan traktor adalah permulaan. Perusahaan akan melakukan pendampingan yang berkesinambungan, sehingga tidak menutup peluang akan adanya introduksi teknologi baru lainnya yang dapat diterapkan pada budidaya padi sawah.
+            </p>
+            <br/>
+
+            <p>
+                “Kegiatan ini merupakan salah satu komitmen perusahaan untuk mendukung kemandirian ekonomi di wilayah operasional RMKE, tentunya ini akan dilakukan secara konsisten sehingga dapat memberikan manfaat langsung dan berkelanjutan kepada masyarakat sekitar. Ke depannya masyarakat dapat lebih mandiri secara ekonomi,” kata William, dalam keterangan tertulis, Rabu (18/10/2023).
+            </p>
+            <br/>
+
+            <p>
+                Perusahaan memberdayakan masyarakat sesuai potensi desa, dengan jumlah luas lahan sawah 178,5 ha dan jumlah petani sekitar 80 orang. Program ini akan membantu meningkatkan produktivitas hasil panen per tahun yang saat ini mencapai sekitar 5,3 ton per Ha menjadi minimal 6 ton per ha. Penggunaan mesin pertanian seperti pemanfaatan traktor dan adopsi inovasi pertanian lainnya diharapkan dapat meningkatkan produktivitas hasil panen sehingga mendorong kemandirian ekonomi masyarakat lokal, khususnya di sektor pertanian.
+            </p>
+            <br/>
+
+            <p>
+                “Bantuan mesin traktor ini tentu akan sangat berguna bagi masyarakat, kami berterima kasih atas perhatian dan bantuan perusahaan, dan kami menunggu program selanjutnya,” kata Lili, warga RT 025 sekaligus sebagai Ketua Kelompok Tani Suka Maju 2.
+            </p>
+            <br/>
+
+            <p>
+                Tidak hanya bantuan mesin pertanian, program ini juga akan dilengkapi dengan pelatihan dan pendampingan terkait pengoperasian traktor pertanian, perhitungan biaya penggunaan traktor per hektarnya, termasuk manajemen pengelolaannya.
+            </p>
+            <br/>
+
+            <p>
+                “Ke depannya, dalam program jangka panjang, RMKE akan terus bekerja sama dengan Dinas Pertanian dan Ketahanan Pangan Kota Palembang melalui UPTD Balai Penyuluh Pertanian (BPP) Gandus agar saling mendukung dalam program yang sedang dijalankan melalui PPL (Penyuluh Pertanian Lapangan) setempat,” tutup William.
+            </p>
+            <br/>
+
+        </article>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="tentang.html">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="kontak.html">Contact Us</a></li>
+                        <li><a href="tentang.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>List Menu</h4>
+                    <ul>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="tanaman.html">Tanaman</a></li>
+                        <li><a href="forum.html">Forum</a></li>
+                        <li><a href="kalkulator.html">Kalkulator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://ne-np.facebook.com/david.sugiarto.564/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/_da049/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/_da049/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://daaddimaki04.000webhostapp.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bwh">
+        <p style="text-align: center">Copyright &copy; 2023 Gree_News</p>
+    </div>   
+    
+</body>
+</html>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    nav {
+        background-color: khaki;
+        color: dimgray;
+        display: flex;
+        justify-content: space-between; /* Membuat logo dan menu berada di dua sisi berbeda */
+        align-items: center;    gap: 100px;
+    }
+    
+    /* Navbar Searching */
+    .search-container {
+                float: right;
+                margin-top: 10px;
+                align-items: center;
+            }
+    
+            .search-container input[type="text"] {
+                padding: 5px;
+                margin-top: 4px;
+                margin-right: 16px;
+                border: none;
+                font-size: 17px;
+            }
+    
+            .search-container button {
+                padding: 5px 10px;
+                background: #4CAF50;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .search-container button:hover {
+                background: dimgray;
+            }
+    
+            #searchResults {
+                list-style: none;
+            }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-image {
+        max-width: 150px; /* Ukuran gambar logo */
+        margin-right: 10px; /* Jarak antara logo gambar dan teks */
+    }
+    
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu {
+    list-style: none;
+    
+}
+
+.menu li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.menu a {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article {
+    margin-bottom: 40px;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.article-info {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* CSS Footer */
+.footer {
+    background-color: khaki;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: flex-end; /* Menggeser menu-footer ke kanan */
+}
+
+.footer-col {
+    text-align: left;
+    margin-left: 20px; /* Memberi jarak antara kolom menu-footer */
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #24262b;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: dimgray;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*---*/
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #4CAF50;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #4CAF50;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: dimgray;
+        padding-left: 8px;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+        background-color: #4CAF50;
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #ffffff;
+        background-color: dimgray;
+    }
+
+    .footer-bwh{
+        background-color: khaki;
+    }
+
+/* Style tambahan sesuai kebutuhan Anda */
+/*sc : https://finance.detik.com/berita-ekonomi-bisnis/d-6949936/meriahkan-hari-tani-tokopedia-beri-panggung-penjual-buah-tanaman/2*/
+</style>
